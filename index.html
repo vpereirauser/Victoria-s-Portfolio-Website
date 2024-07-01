@@ -33,65 +33,58 @@
         body, h2, h3, p, a {
             color: rgb(0, 0, 0);
         }
+        .homepage-photo {
+            background-image: url('/websitephoto.jpg');
+            background-size: cover;
+        }
     </style>
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
 </head>
-<body class="container-fluid">
-    <!-- Main heading/logo -->
-    <h1 class="logo">VP</h1>
-  
-    <!-- Main content row with full height -->
-    <div class="row full-height">
-        <!-- Left column for music cards -->
-        <div class="col-3">
-            <!-- Music section heading -->
-            <h3 class="mb-3">Music</h3>
-            <!-- Music video card -->
-            <div class="card music-card">
-                <div class="card-body">
-                    <!-- Card title with icon -->
-                    <h5 class="card-title"><i class="bi bi-camera-video"></i> Video</h5>
-                    <!-- Card text -->
-                    <p class="card-text">Check out my latest videos.</p>
-                    <!-- Card button -->
-                    <a href="" class="btn btn-primary">Watch</a>
+<body>
+    <div class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand" href="/">VP</a>
+                </div>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/music.html">Music</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Main content row with full height -->
+        <div class="row container-fluid my-4 flex-grow-1">
+            <!-- Left column for About Me -->
+            <div class="col-6 d-flex align-items-center">
+                <div class="d-flex flex-column">
+                <h3 class="mb-3">About Me</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos doloribus aperiam asperiores amet ipsa quas fugit ea repellendus laboriosam ut, hic commodi atque quod, exercitationem sint quam, ipsam error dolores.
+                    
                 </div>
             </div>
-            <!-- SoundCloud card -->
-            <div class="card music-card">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-soundwave"></i> SoundCloud</h5>
-                    <p class="card-text">Listen to my music on SoundCloud.</p>
-                    <a target="_blank" href="https://soundcloud.com/vicpereira" class="btn btn-primary">Listen</a>
+            <!-- Right column for image -->
+            <div class="col-6 h-100">
+                <div id="image-container" class="w-100 h-100">
+                <!-- Image with fluid class for responsiveness -->
+                <!-- <img src="websitephoto.jpg" alt="" class="img-fluid homepage-photo"> -->
+                <div class="homepage-photo w-100 h-100">
+
+                </div>
                 </div>
             </div>
-            <!-- Lead Sheets card -->
-            <div class="card music-card">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="bi bi-music-note-list"></i> Lead Sheets</h5>
-                    <p class="card-text">Explore my collection of lead sheets.</p>
-                    <a href="" class="btn btn-primary">View</a>
-                </div>
-            </div>
-        </div>
-        <!-- Right column for image -->
-        <div class="col-9">
-            <!-- Image with fluid class for responsiveness -->
-            <img src="websitephoto.jpg" alt="" class="img-fluid">
         </div>
     </div>
+
     
-    <!-- Contact section -->
-    <section id="contact">
-        <div class="my-5">
-            <!-- Contact heading -->
-            <h2>Contact</h2>
-            <!-- Contact details -->
-            <p>Name: Victoria Pereira</p>
-            <p>Email: <a href="mailto:vicp2023@gmail.com">vicp2023@gmail.com</a></p>
-        </div>
-    </section>
+
 
 </body>
 </html>
